@@ -3,6 +3,8 @@ use strict;
 package Jifty::Plugin::SiteNews;
 use base qw'Jifty::Plugin';
 
+our $VERSION = '0.01';
+
 =head1 NAME
 
 Jifty::Plugin::SiteNews - Provide site news in your app
