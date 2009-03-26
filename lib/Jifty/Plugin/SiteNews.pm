@@ -3,7 +3,7 @@ use strict;
 package Jifty::Plugin::SiteNews;
 use base qw'Jifty::Plugin';
 
-our $VERSION = '0.01';
+our $VERSION = '0.9';
 
 =head1 NAME
 
