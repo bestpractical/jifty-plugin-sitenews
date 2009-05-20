@@ -26,6 +26,8 @@ sub object_type { 'News' }
 
 template search_region => sub {''};
 
+template sort_header => sub {''};
+
 template 'index.html' => page {
     my $self = shift;
     title is  'Site news' ;
@@ -36,7 +38,6 @@ template 'index.html' => page {
     }
 
 };
-
 
 template 'view' => sub {
     my $self = shift;
