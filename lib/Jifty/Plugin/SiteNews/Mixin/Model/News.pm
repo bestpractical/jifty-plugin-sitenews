@@ -5,7 +5,7 @@ package Jifty::Plugin::SiteNews::Mixin::Model::News;
 use Jifty::DBI::Schema;
 use base 'Jifty::DBI::Record::Plugin';
 
-our @EXPORT = qw(current_user_can);
+our @EXPORT = qw(create as_atom_entry);
 
 =head1 NAME
 
@@ -41,7 +41,7 @@ sub create {
         title     => undef,
         content   => undef,
         @_,
-        created   => DateTime->now->iso8601,
+        created   => DateTime->now,
     );
 
     $self->SUPER::create(%args);
