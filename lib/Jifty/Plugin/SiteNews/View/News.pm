@@ -51,7 +51,10 @@ template 'view' => sub {
     my $record = $self->_get_record($id);
 
     h1 { $record->title };
+    span { {class is 'date'} $record->created };
     blockquote {$record->content};
+
+    if ($record->current_user_can('update')) {
         hyperlink(
                 label   => "Edit",
                 class   => "editlink",
@@ -60,7 +63,7 @@ template 'view' => sub {
                     args         => { object_type => $object_type, id => $id }
                 },
         );
-
+    }
 
 };
 
