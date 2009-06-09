@@ -67,4 +67,11 @@ template 'view' => sub {
 
 };
 
+template no_items_found => sub {
+    div {
+        { class is 'no_items' };
+        outs( _("No news is good news!") );
+    }
+};
+
 1;
