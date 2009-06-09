@@ -26,6 +26,16 @@ You will also need to alias the view somewhere; from YourApp::View:
   require Jifty::Plugin::SiteNews::View::News;
   alias Jifty::Plugin::SiteNews::View::News under '/news';
 
+=head1 AUTHOR
+
+Alex Vandiver
+
+=head1 LICENSE
+
+Copyright 2005-2009 Best Practical Solutions, LLC.
+
+This program is free software and may be modified and distributed under the same terms as Perl itself.
+
 =cut
 
 1;

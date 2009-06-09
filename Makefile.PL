@@ -1,10 +1,10 @@
-use inc::Module::Install 0.46;
+use inc::Module::Install;
 name('Jifty-Plugin-SiteNews');
-version_from('lib/Jifty/Plugin/SiteNews.pm');
+all_from('lib/Jifty/Plugin/SiteNews.pm');
 
 requires('Jifty');
 
 auto_install();
-tests(qw( t/*/t/*.t ));
+tests(qw( t/*.t ));
 
 WriteAll;
